@@ -12,6 +12,13 @@ Python3 should already be installed. Use pip (or pip3, if there is a conflict wi
     pip install -r requirements.txt
     
 For using you also need your TOKEN from [bitly.com](https://app.bitly.com/)
+You should use environment variables. Create file **.env** and variable BITLY_TOKEN with your token.
+This token we use in API_2_Bitly.py in **main** function:
+
+    token = os.getenv('BITLY_TOKEN')
+
+
+
 Recomended to use [virtualenv/venv](https://docs.python.org/3/library/venv.html)
 
 Project Goals
