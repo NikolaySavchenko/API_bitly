@@ -13,11 +13,14 @@ Python3 should already be installed. Use pip (or pip3, if there is a conflict wi
     
 For using you also need your TOKEN from [bitly.com](https://app.bitly.com/)
 You should use environment variables. Create file **.env** and variable BITLY_TOKEN with your token.
-This token we use in API_2_Bitly.py in **main** function:
+This token we use in `API_2_Bitly.py` in **main** function:
 
     token = os.getenv('BITLY_TOKEN')
 
+Example for command line:
 
+    $ python '\API_bitly\API_2_Bitly.py' https://dwmn.org
+    Битлинк: https://bit.ly/3U0CDXa
 
 Recomended to use [virtualenv/venv](https://docs.python.org/3/library/venv.html)
 
