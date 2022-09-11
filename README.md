@@ -12,10 +12,10 @@ Python3 should already be installed. Use pip (or pip3, if there is a conflict wi
     pip install -r requirements.txt
     
 For using you also need your TOKEN from [bitly.com](https://app.bitly.com/)
-You should use environment variables. Create file **.env** and variable BITLY_TOKEN with your token.
-This token we use in `API_2_Bitly.py` in **main** function:
+You should use environment variables. Create file name **.env** and variable BITLY_TOKEN in the root directory.
+In file **.env** only one line:
 
-    token = os.getenv('BITLY_TOKEN')
+    BITLY_TOKEN = 'here is your own TOKEN'
 
 Example for command line:
 
