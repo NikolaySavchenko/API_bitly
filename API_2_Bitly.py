@@ -38,7 +38,7 @@ def main():
     if len (sys.argv) > 1:
         input_url = sys.argv[1]
     else:
-        input_url = 'https://dwmn.org'
+        input_url = 'https://dvmn.org'
     try:
         if is_bitlink(input_url, token):
             print('Количество кликов:', count_clicks(token, input_url))
