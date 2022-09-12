@@ -2,7 +2,7 @@ import requests
 from urllib.parse import urlsplit
 from dotenv import load_dotenv
 import os
-import sys
+import argparse
 
 
 def shorten_link(token, url):
@@ -35,10 +35,9 @@ def is_bitlink(url, token):
 def main():
     load_dotenv()
     token = os.getenv('BITLY_TOKEN')
-    if len (sys.argv) > 1:
-        input_url = sys.argv[1]
-    else:
-        input_url = 'https://dvmn.org'
+    parser = argparse.ArgumentParser('Input link')
+    parser.add_argument('link')
+    input_url = parser.parse_args().link
     try:
         if is_bitlink(input_url, token):
             print('Количество кликов:', count_clicks(token, input_url))
