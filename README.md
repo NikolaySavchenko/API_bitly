@@ -15,7 +15,7 @@ For using you also need your TOKEN from [bitly.com](https://app.bitly.com/)
 You should use environment variables. Create file name **.env** and variable BITLY_TOKEN in the root directory.
 In file **.env** only one line:
 
-    BITLY_TOKEN = 'here is your own TOKEN'
+    BITLY_TOKEN='here is your own TOKEN'
 
 Example for command line:
 
